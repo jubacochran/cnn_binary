@@ -1,0 +1,16 @@
+#Data Manipulation
+numpy
+
+#Plotting
+matplotlib.pyplot
+pandas 
+
+#Machine Learning
+tensorflow 
+keras
+#Formatting
+json
+
+#Image Processing
+import shutil
+
