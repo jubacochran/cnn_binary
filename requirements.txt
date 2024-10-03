@@ -7,4 +7,3 @@ pandas
 
 # Machine Learning
 tensorflow
-keras
