@@ -6,6 +6,10 @@ import os
 train_images_dir = "archive/train/train"
 val_images_dir = "archive/valid/valid"
 
+# Define paths to annotation files
+train_annotations_file = "archive/train_annotations"
+valid_annotations_file = "archive/valid_annotations"
+
 # Define the base output directory
 output_base_dir = "dataset"
 train_output_dir = os.path.join(output_base_dir, "train")
@@ -22,10 +26,10 @@ category_mapping = {1: "penguin", 2: "turtle"}
 for category in category_mapping.values():
     os.makedirs(os.path.join(train_output_dir, category), exist_ok=True)
 
-# Load the training and validation annotations (these can be read from files)
-train_annotations = []
+# Load the training and validation annotations
+train_annotations = json.load(open(train_annotations_file, "r"))
 
-valid_annotations = []
+valid_annotations = json.load(open(valid_annotations_file, "r"))
 
 # Function to move files for the training set
 def move_train_files(annotations, source_dir, dest_dir, category_mapping):

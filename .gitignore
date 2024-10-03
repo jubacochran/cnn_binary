@@ -5,3 +5,45 @@ archive/valid
 .venv/
 venv/
 env/
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Conda environment-specific ignores
+envs/
+conda-meta/
+*.conda
+
+# Ignore Jupyter Notebook checkpoints and hidden directories
+.ipynb_checkpoints/
+.cache/
+.local/
+
+# Ignore MacOS-specific files
+.DS_Store
+
+# Ignore temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+
+# VSCode-specific configuration
+.vscode/
+
+# Ignore local Conda environments (if created inside the project)
+env/
+
+# Ignore temporary environment files
+*.yaml
+*.yml
+
+# But keep the main environment.yml for reproducibility
+!environment.yml
+
+#Ignore data folder with images
+dataset/
