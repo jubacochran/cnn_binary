@@ -5,6 +5,8 @@ archive/valid
 .venv/
 venv/
 env/
+.env
+
 # Python-specific ignores
 __pycache__/
 *.py[cod]
