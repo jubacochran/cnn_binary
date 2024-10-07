@@ -1,5 +1,8 @@
 In this excercise I'll explore imgages of turtle and penguin in hopes to classify them accurately. I'll also explore some methods to imporve model performance and also have a look at feature maps learned by the covenet. 
 
+CNN Model:
+
+
 
 
 
