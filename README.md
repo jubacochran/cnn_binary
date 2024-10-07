@@ -1,3 +1,8 @@
+In this excercise I'll explore imgages of turtle and penguin in hopes to classify them accurately. I'll also explore some methods to imporve model performance and also have a look at feature maps learned by the covenet. 
+
+
+
+
 Getting setup:
 
 Download the Dataset from Kaggle:(make sure you have your API creds)
@@ -9,33 +14,11 @@ kaggle datasets files abbymorgan/penguins-vs-turtles
 To configure the dataset paths and other settings, create a `.env` file in the root directory with the following values:
 
 ```plaintext
+MODEL_DIR=models
 TRAIN_IMAGES_DIR=archive/train/train
 VAL_IMAGES_DIR=archive/valid/valid
 TRAIN_ANNOTATIONS_FILE=archive/train_annotations
 VALID_ANNOTATIONS_FILE=archive/valid_annotations
 OUTPUT_BASE_DIR=dataset
-
-
-
-
-### Set Environment Variables Manually (For Testing)
-If you prefer not to use `.env` files, you can manually set environment variables in your terminal:
-
-- On **Linux/Mac**:
-
-  ```bash
-  export TRAIN_IMAGES_DIR=archive/train/train
-  export VAL_IMAGES_DIR=archive/valid/valid
-  export TRAIN_ANNOTATIONS_FILE=archive/train_annotations
-  export VALID_ANNOTATIONS_FILE=archive/valid_annotations
-  export OUTPUT_BASE_DIR=dataset
-
-    ```powershell
-- On **Windows**:
-    set TRAIN_IMAGES_DIR=archive/train/train
-    set VAL_IMAGES_DIR=archive/valid/valid
-    set TRAIN_ANNOTATIONS_FILE=archive/train_annotations
-    set VALID_ANNOTATIONS_FILE=archive/valid_annotations
-    set OUTPUT_BASE_DIR=dataset
-
-
+CLASS_TRAIN_IMAGES_DIR=dataset/train
+TEST_IMAGES_DIR=dataset/val
