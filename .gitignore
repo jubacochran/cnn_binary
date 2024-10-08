@@ -1,6 +1,6 @@
 archive/train
 archive/valid
-history
+.history/
 # Ignore virtual environment folders
 .venv/
 venv/
