@@ -1,0 +1,9 @@
+# Data Manipulation
+numpy
+
+# Plotting
+matplotlib
+pandas
+
+# Machine Learning
+tensorflow

@@ -1,0 +1,4 @@
+archive/train
+archive/valid
+.venv
+.history

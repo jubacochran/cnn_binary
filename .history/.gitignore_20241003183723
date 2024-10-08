@@ -1,0 +1,7 @@
+archive/train
+archive/valid
+.history
+# Ignore virtual environment folders
+.venv/
+venv/
+env/
